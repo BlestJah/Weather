@@ -13,7 +13,7 @@
         android:id="@+id/city_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/weather_icon"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/city_field"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/weather_icon"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="13sp" />
 
@@ -37,16 +37,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/weather_icon"
+        android:layout_alignRight="@id/weather_icon"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40sp" />
+        android:textSize="50sp" />
 
     <TextView
         android:id="@+id/details_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/weather_icon"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/current_temperature_field"
+        android:layout_alignBottom="@id/weather_icon"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
